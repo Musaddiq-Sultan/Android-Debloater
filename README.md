@@ -23,7 +23,7 @@ cd Android-Debloater/
 
 3. Install the required Python packages using pip.
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 4. Connect your Android device to your computer using a USB cable and make sure that USB debugging is enabled on your device.
 5. Launch the Debloater app by running the `main.py` file.
