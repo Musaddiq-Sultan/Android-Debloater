@@ -7,6 +7,7 @@ Debloater is a Python-based desktop application that allows users to remove or d
 ### Prerequisites
 
 - <a href="https://www.python.org/downloads/">Python</a>
+- Tkinter - ```bash sudo apt-get install python3-tk```
 - <a href="https://developer.android.com/tools/releases/platform-tools">ADB (Android Debug Bridge)</a>
 
 ### Installing
@@ -21,12 +22,8 @@ git clone https://github.com/Musaddiq-Sultan/Android-Debloater
 cd Android-Debloater/
 ```
 
-3. Install the required Python packages using pip.
-```bash
-pip3 install -r requirements.txt
-```
-4. Connect your Android device to your computer using a USB cable and make sure that USB debugging is enabled on your device.
-5. Launch the Debloater app by running the `main.py` file.
+3. Connect your Android device to your computer using a USB cable and make sure that USB debugging is enabled on your device.
+4. Launch the Debloater app by running the `main.py` file.
 ```
 python3 debloat.py
 ```
