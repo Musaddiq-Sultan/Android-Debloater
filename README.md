@@ -7,7 +7,7 @@ Debloater is a Python-based desktop application that allows users to remove or d
 ### Prerequisites
 
 - <a href="https://www.python.org/downloads/">Python</a>
-- Tkinter - ```bash sudo apt-get install python3-tk```
+- Tkinter - ```sudo apt-get install python3-tk```
 - <a href="https://developer.android.com/tools/releases/platform-tools">ADB (Android Debug Bridge)</a>
 
 ### Installing
