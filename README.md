@@ -2,8 +2,9 @@
 
 **Android Debloater** is a lightweight Python-based desktop application that allows you to remove, disable, or enable pre-installed system and third-party apps ("bloatware") from your Android device using **ADB (Android Debug Bridge)**, all through a simple graphical interface built with Tkinter.
 
-![logo](icon.png)
-
+<p align="center">
+  <img src="icon.png" alt="Android Debloater Logo" width="512" height="512">
+</p>
 ---
 
 ## Features
