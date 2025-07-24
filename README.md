@@ -1,37 +1,114 @@
 # Android Debloater
 
-Debloater is a Python-based desktop application that allows users to remove or disable unwanted system or third-party applications (also known as "bloatware") on their Android devices using ADB (Android Debug Bridge).
+**Android Debloater** is a lightweight Python-based desktop application that allows you to remove, disable, or enable pre-installed system and third-party apps ("bloatware") from your Android device using **ADB (Android Debug Bridge)**, all through a simple graphical interface built with Tkinter.
 
-## Getting Started
+![logo](icon.png)
+
+---
+
+## Features
+
+- View installed packages
+- Disable apps
+- Enable previously disabled apps
+- Uninstall system/third-party apps (root only)
+- GUI-based (no terminal knowledge required)
+- Built-in ADB binary
+
+---
+
+## 1. Running the App (Prebuilt Executable)
+
+If you're not a developer and just want to use the tool:
 
 ### Prerequisites
 
-- <a href="https://www.python.org/downloads/">Python</a>
-- Tkinter - ```sudo apt-get install python3-tk```
-- <a href="https://developer.android.com/tools/releases/platform-tools">ADB (Android Debug Bridge)</a>
+- USB Debugging must be enabled on your Android phone
+- A USB cable to connect your phone
 
-### Installing
+### Steps
 
-1. Clone the repository.
-```bash
-git clone https://github.com/Musaddiq-Sultan/Android-Debloater
-```
+1. Download the precompiled Linux binary from the [Releases](https://github.com/Musaddiq-Sultan/Android-Debloater/releases).
+2. (Linux only) Make it executable:
+   ```bash
+   chmod +x AndroidDebloater
+    ```
 
-2. Open a terminal or command prompt and navigate to the Debloater directory.
-```bash
-cd Android-Debloater/
-```
+3. Run it directly:
 
-3. Connect your Android device to your computer using a USB cable and make sure that USB debugging is enabled on your device.
-4. Launch the Debloater app by running the `main.py` file.
-```
-python3 debloat.py
-```
+   ```bash
+   ./AndroidDebloater
+   ```
+
+   or double-click the executable.
+
+---
+
+## 2. Build It Yourself (Linux)
+
+If you'd like to build the executable yourself:
+
+### Prerequisites
+
+* Python 3
+* `python3-tk` installed:
+  ```bash
+  sudo apt install python3-tk
+  ```
+
+### Instructions
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Musaddiq-Sultan/Android-Debloater
+   ```
+   ```bash
+   cd Android-Debloater
+   ```
+
+2. Install tkinter:
+   ```bash
+   sudo apt install python3-tk
+   ```
+
+3. Run the builder script:
+
+   ```bash
+   bash builder.sh
+   ```
+
+This will generate a single standalone file (`dist/AndroidDebloater`) which includes your GUI app, embedded `adb`, and icon.
+
+---
+
+## Manual Python Usage (For Developers)
+
+If you prefer to run the app without building an executable:
+
+1. Connect your Android phone with USB debugging enabled
+2. Run:
+
+   ```bash
+   python3 main.py
+   ```
+
+---
 
 ## Usage
 
-1. Enter the package name of the application you want to remove or disable.
-2. Select the desired action (enable app, disable app, or uninstall app) using the radio buttons.
-3. Click the "Submit" button to execute the selected action.
-4. View the logs in the "Logs" section to see the output of the ADB commands.
-5. (Optional) Use the "Select App" button to view a list of installed packages and select a package from the list to automatically.
+* Select an app or enter the package name manually
+* Click Refresh
+* Choose an action:
+  * Enable App
+  * Disable App
+  * Uninstall App (Root only)
+* Click Submit
+* Check the Logs for results
+
+---
+
+## Author
+
+**Musaddiq Sultan**
+[GitHub Profile](https://github.com/Musaddiq-Sultan)
