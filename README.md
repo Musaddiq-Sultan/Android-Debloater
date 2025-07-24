@@ -112,5 +112,4 @@ If you prefer to run the app without building an executable:
 
 ## Author
 
-**Musaddiq Sultan**
-[GitHub Profile](https://github.com/Musaddiq-Sultan)
+[Musaddiq Sultan](https://github.com/Musaddiq-Sultan)
