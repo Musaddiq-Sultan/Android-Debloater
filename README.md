@@ -5,12 +5,13 @@
 <p align="center">
   <img src="icon.png" alt="Android Debloater Logo" width="512" height="512">
 </p>
+
 ---
 
 ## Features
 
 - View installed packages
-- Disable apps
+- Disable any system or third-party app
 - Enable previously disabled apps
 - Uninstall system/third-party apps (root only)
 - GUI-based (no terminal knowledge required)
@@ -35,8 +36,7 @@ If you're not a developer and just want to use the tool:
    chmod +x AndroidDebloater
     ```
 
-3. Run it directly:
-
+4. Run it directly:
    ```bash
    ./AndroidDebloater
    ```
@@ -53,6 +53,7 @@ If you'd like to build the executable yourself:
 
 * Python 3
 * `python3-tk` installed:
+
   ```bash
   sudo apt install python3-tk
   ```
